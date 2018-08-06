@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apListeRet" disable="false" focusTraversable="false" prefHeight="547.0" prefWidth="490.0" style="-fx-background-color:#ffffff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gestionLocation.listeRetardController">
+  <children>
+    <Label layoutX="44.0" layoutY="21.0" prefHeight="43.0" prefWidth="423.0" text="Liste des locations en retard" textAlignment="CENTER" textFill="#0072c6">
+      <font>
+        <Font name="Arial Black" size="25.0" />
+      </font>
+    </Label>
+    <ListView id="lvListVehDis" fx:id="lvListeRetard" layoutX="22.0" layoutY="83.0" prefHeight="433.0" prefWidth="445.0" />
+  </children>
+</AnchorPane>

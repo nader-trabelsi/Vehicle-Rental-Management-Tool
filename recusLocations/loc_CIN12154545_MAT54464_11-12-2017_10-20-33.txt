@@ -1,0 +1,11 @@
+**** Informations Client ****
+- CIN: 12154545
+- Nom: fouleni
+- Prénom: foulen
+**** Informations Vehicule ****
+Matricule: 54464
+**** Informations Location ****
+La date et l'horaire: 11-12-2017_10-20-33
+Duree: 2 jours
+**** Paiement ****
+Total: 240 DT

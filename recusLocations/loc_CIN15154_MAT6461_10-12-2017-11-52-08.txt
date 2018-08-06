@@ -1,0 +1,11 @@
+**** Informations Client ****
+- CIN: 15154
+- Nom: jklj
+- Prénom: kjkl
+**** Informations Vehicule ****
+Matricule: 6461
+**** Informations Location ****
+La date et l'horaire: 10-12-2017-11-52-08
+Duree: 1
+**** Paiement ****
+Total: 4200 Dinars

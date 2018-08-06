@@ -1,0 +1,11 @@
+**** Informations Client ****
+- CIN: 131616
+- Nom: Test
+- Prénom: Testtt
+**** Informations Vehicule ****
+Matricule: 516464
+**** Informations Location ****
+La date et l'horaire: 10-12-2017_12-26-14
+Duree: 1 jours
+**** Paiement ****
+Total: 130 DT

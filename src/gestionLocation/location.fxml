@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apLoc" disable="false" focusTraversable="false" prefHeight="547.0" prefWidth="490.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gestionLocation.locationController">
+  <children>
+    <Label layoutX="64.0" layoutY="22.0" prefHeight="43.0" prefWidth="374.0" text="Location d'un véhicule" textAlignment="CENTER">
+      <font>
+        <Font name="Arial Black" size="30.0" />
+      </font>
+      <textFill>
+        <Color blue="0.776" green="0.447" red="0.000" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label layoutX="235.0" layoutY="159.0" text="CIN:" textAlignment="LEFT">
+      <font>
+        <Font name="Arial" size="16.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label font="$x3" layoutX="236.0" layoutY="189.0" text="Nom:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="236.0" layoutY="223.0" text="Prénom:" textAlignment="LEFT" />
+    <Separator layoutX="205.0" layoutY="90.0" orientation="VERTICAL" prefHeight="237.0" />
+    <TextField id="tfMat" fx:id="tfCIN" disable="false" layoutY="154.0" maxHeight="25.0" maxWidth="120.0" prefHeight="25.0" prefWidth="76.99990000000253" AnchorPane.rightAnchor="15.0" />
+    <TextField id="tfnbPlaces" fx:id="tfNom" layoutY="189.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="15.0" />
+    <TextField id="tfPoids" fx:id="tfPrenom" layoutY="222.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="15.0" />
+    <Button id="butEffAjout" fx:id="butLouer" layoutX="188.0" layoutY="501.0" mnemonicParsing="false" onAction="#butLouerHandle" prefHeight="25.0" prefWidth="103.0" text="Louer" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font name="Arial Bold" size="18.0" />
+      </font>
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+    <Label layoutX="64.0" layoutY="103.0" text="Véhicule:" textAlignment="LEFT" textFill="$x2">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Separator layoutX="131.0" layoutY="363.0" prefWidth="256.0" />
+    <Label font="$x1" layoutX="332.0" layoutY="103.0" text="Client:" textAlignment="LEFT" textFill="$x2" />
+    <Label layoutX="131.0" layoutY="373.0" prefHeight="82.0" prefWidth="69.0" text="Durée:" textAlignment="LEFT" textFill="$x2">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <Label font="$x3" layoutX="14.0" layoutY="157.0" text="Matricule:" textAlignment="LEFT" />
+    <TextField id="tfMat" fx:id="tfDuree" disable="false" layoutY="404.0" maxHeight="25.0" maxWidth="120.0" prefHeight="25.0" prefWidth="103.0" promptText="En jours" AnchorPane.rightAnchor="167.0" />
+    <ComboBox fx:id="listVehChoix" editable="false" layoutX="98.0" layoutY="152.0" style="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

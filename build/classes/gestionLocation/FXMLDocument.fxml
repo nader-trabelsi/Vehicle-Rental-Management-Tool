@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apfxml" disable="false" focusTraversable="false" prefHeight="547.0" prefWidth="439.0" style="-fx-background-color:#ffffff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gestionLocation.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Button fx:id="butRet" layoutX="44.0" layoutY="432.0" mnemonicParsing="false" onAction="#butRetHandle" prefHeight="38.0" prefWidth="350.0" style="" text="Faire retourner un véhicule" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="butLoc" font="$x1" layoutX="45.0" layoutY="384.0" minHeight="16.0" mnemonicParsing="false" onAction="#butLocHandle" prefHeight="37.999900000002526" prefWidth="350.0" style="" text="Faire louer un véhicule" textAlignment="CENTER" textFill="WHITE">
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="butVehDis" font="$x1" layoutX="43.0" layoutY="335.0" minHeight="28.0" mnemonicParsing="false" onAction="#butVehDisHandle" prefHeight="38.0" prefWidth="350.0" style="" text="Liste des véhicules disponibles" textAlignment="CENTER" textFill="WHITE">
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+    <Button id="" fx:id="butAjout" focusTraversable="false" font="$x1" layoutX="43.0" minHeight="28.0" mnemonicParsing="false" onAction="#butAjoutHandle" prefHeight="38.0" prefWidth="350.0" style="" text="Ajouter un vehicule" textAlignment="CENTER" textFill="WHITE" underline="false" wrapText="false" AnchorPane.topAnchor="287.0">
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+    <ImageView fitHeight="233.2421783867417" fitWidth="350.0" layoutX="44.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+      <image>
+        <Image url="@../moy_transpot_byNader.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="butLocRet" font="$x1" layoutX="43.0" layoutY="481.0" mnemonicParsing="false" onAction="#butLocRetHandle" prefHeight="38.0" prefWidth="350.0000999999975" style="" text="Liste des locations en retard" textAlignment="CENTER" textFill="WHITE">
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

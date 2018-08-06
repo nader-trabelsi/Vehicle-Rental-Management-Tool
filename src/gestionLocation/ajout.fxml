@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apAjout" disable="false" focusTraversable="false" prefHeight="547.0" prefWidth="490.0" style="-fx-background-color:#ffffff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gestionLocation.ajoutController">
+  <children>
+    <Label fx:id="label" layoutX="64.0" layoutY="90.0" minHeight="16.0" minWidth="69.0" />
+    <Label layoutX="22.0" layoutY="90.0" text="Terrestre:">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="23.0" layoutY="179.0" text="Marin:" />
+    <Label font="$x1" layoutX="20.0" layoutY="249.0" text="Aerien:" />
+    <RadioButton id="butVoiture" fx:id="rbVoiture" layoutX="99.0" layoutY="99.0" mnemonicParsing="false" onAction="#rbVoitureHandle" selected="true" text="Voiture" textAlignment="LEFT">
+      <textFill>
+        <Color blue="0.800" green="0.000" red="0.064" fx:id="x2" />
+      </textFill>
+      <toggleGroup>
+        <ToggleGroup fx:id="typeVehicule" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="rbCamion" layoutX="99.0" layoutY="115.0" mnemonicParsing="false" onAction="#rbCamionHandle" text="Camion" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbMoto" layoutX="99.0" layoutY="131.0" mnemonicParsing="false" onAction="#rbMotoHandle" text="Moto" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbYacht" layoutX="99.0" layoutY="186.0" mnemonicParsing="false" onAction="#rbYachtHandle" text="Yacht" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbVoilier" layoutX="99.0" layoutY="202.0" mnemonicParsing="false" onAction="#rbVoilierHandle" text="Voilier" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbAvion" layoutX="99.0" layoutY="255.0" mnemonicParsing="false" onAction="#rbAvionHandle" text="Avion" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbBallon" layoutX="99.0" layoutY="272.0" mnemonicParsing="false" onAction="#rbBallonHandle" text="Ballon" textFill="$x2" toggleGroup="$typeVehicule" />
+    <RadioButton fx:id="rbHeli" layoutX="99.0" layoutY="289.0" mnemonicParsing="false" onAction="#rbHeliHandle" text="Helicoptere" textFill="$x2" toggleGroup="$typeVehicule" />
+    <Label layoutX="86.0" layoutY="22.0" prefHeight="43.0" prefWidth="324.0" text="Ajout d'un véhicule" textAlignment="CENTER" textFill="#0072c6">
+      <font>
+        <Font name="Arial Black" size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="240.0" layoutY="109.0" text="Matricule:" textAlignment="LEFT">
+      <font>
+        <Font name="Arial" size="16.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label font="$x3" layoutX="241.0" layoutY="139.0" text="Nb. de places:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="241.0" layoutY="173.0" text="Poids (kg):" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="205.0" text="Marque:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="232.0" text="Année fabrication:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="241.0" layoutY="265.0" text="Puissance:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="297.0" text="Modele:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="327.0" text="Charge max. (kg):" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="355.0" text="Vitesse (km/h):" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="387.0" text="Nombre voiles:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="421.0" text="Largeur en cm:" textAlignment="LEFT" />
+    <Label font="$x3" layoutX="240.0" layoutY="452.0" text="Longueur en cm:" textAlignment="LEFT" />
+    <Separator layoutX="205.0" layoutY="90.0" orientation="VERTICAL" prefHeight="316.0" />
+    <TextField fx:id="tfMat" disable="false" layoutY="101.0" maxHeight="25.0" maxWidth="120.0" opacity="1.0" prefHeight="25.0" prefWidth="76.99990000000253" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfnbPlaces" layoutY="137.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfPoids" layoutY="170.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="9.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfMarque" layoutY="199.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfAnnee" layoutY="230.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfPuiss" layoutY="261.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfModele" layoutY="297.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfCharge" layoutY="326.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfVitesse" layoutY="354.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfnbVoiles" layoutY="386.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfLong" layoutY="449.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <TextField fx:id="tfLargeur" layoutY="418.0" maxHeight="25.0" maxWidth="120.0" prefWidth="77.0" AnchorPane.rightAnchor="10.0">
+      <stylesheets>
+        <URL value="@styleTF.css" />
+      </stylesheets>
+    </TextField>
+    <Button fx:id="butEffAjout" layoutX="188.0" layoutY="501.0" mnemonicParsing="false" onAction="#butEffAjoutHandle" prefHeight="25.0" prefWidth="103.0" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font name="Arial Bold" size="18.0" />
+      </font>
+      <stylesheets>
+        <URL value="@styleBoutonbyNader.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

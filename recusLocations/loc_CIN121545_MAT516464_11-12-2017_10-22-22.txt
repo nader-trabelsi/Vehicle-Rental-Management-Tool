@@ -1,0 +1,11 @@
+**** Informations Client ****
+- CIN: 121545
+- Nom: uhjg
+- Prénom: jkgj
+**** Informations Vehicule ****
+Matricule: 516464
+**** Informations Location ****
+La date et l'horaire: 11-12-2017_10-22-22
+Duree: 0 jours
+**** Paiement ****
+Total: 0 DT
